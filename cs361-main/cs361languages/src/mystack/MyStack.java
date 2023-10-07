@@ -6,7 +6,7 @@ package mystack;
 import org.w3c.dom.Node;
 
 /**
- * @author ADD YOUR NAME 
+ * @author Amogh
  *
  */
 
