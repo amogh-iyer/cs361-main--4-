@@ -4,7 +4,7 @@
 package reflection;
 
 /**
- * @author ADD YOUR NAME 
+ * @author Amogh
  *
  */
 
@@ -46,6 +46,16 @@ public class Reflection {
 		// TODO To complete
 		// You need to use the EXACT format of the output
 		// Hint: Use the method getSuperClass()
+		String s = o.getClass().getName();
+		// System.out.println(o.getClass().getName());
+		Class temp = o.getClass();
+		while (temp.getSuperclass() != null){ // It wai
+		// System.out.println(temp.getSuperclass());
+		// System.out.println(temp.getSuperclass().getSuperclass());
+		s += " inherits from " + temp.getSuperclass().getName();
+        temp = temp.getSuperclass();
+		}
+		System.out.println(s);
 	}
 	
 	/**
@@ -81,6 +91,7 @@ public class Reflection {
 		
 		// Demonstration of the methods on an objet of type String
 		// TODO To complete
+		r.inheritanceChain("");
 		
 		// Demonstration of the methods on an objet of type ColoredCircle
 		// TODO To complete		
